@@ -11,7 +11,7 @@ ENV GOPROXY=https://proxy.golang.com.cn
 
 RUN go install github.com/sparrc/gdm@latest
 
-ENV GO111MODULE=on
+ENV GO111MODULE=off
 
 RUN make build
 
