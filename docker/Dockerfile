@@ -13,7 +13,7 @@ RUN go install github.com/sparrc/gdm@latest
 
 ENV GO111MODULE=off
 
-RUN make build
+RUN make
 
 FROM registry.aliyuncs.com/acs/alpine:3.3
 
