@@ -27,5 +27,4 @@ RUN mkdir -p /etc/acs/acs.conf.d && chmod 777 /etc/acs/acs.conf.d
 
 RUN chmod 777 /telegraf
 
-#ENTRYPOINT ["/telegraf","-config", "/etc/acs/monitoring.conf", "-config-directory", "/etc/acs/acs.conf.d"]
-ENTRYPOINT ["/telegraf","-config", "/etc/acs/monitoring.conf"]
+ENTRYPOINT ["/telegraf","-config", "/etc/acs/monitoring.conf", "-config-directory", "/etc/acs/acs.conf.d"]
